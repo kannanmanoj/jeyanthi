@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        /* Common styles */
+        header {
+            background-color: rgb(36, 28, 127);
+            color: white;
+            font-weight: 500;
+            font-size: 40px; /* Decreased font size for better readability on mobile */
+            text-align: center; /* Center align header text */
+            padding: 20px; /* Increased padding for better spacing */
+        }
+
+        .menu {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Allow items to wrap */
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+        }
+
+        ul li {
+            list-style: none;
+            margin: 10px; /* Adjust margin for better spacing */
+            font-size: 24px; /* Decreased font size for better readability on mobile */
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #000000;
+            font-family: Arial;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+        }
+
+        ul li a:hover {
+            color: #ff0000;
+        }
+
+        .table {
+            font-size: 24px;
+            width: 100%;
+            font-style: bold;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            overflow-x: auto;
+        }
+
+        .tr {
+            font-weight: bold;
+        }
+
+        .table td,
+        .table th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* Responsive styles */
+        @media only screen and (max-width: 600px) {
+            ul {
+                flex-direction: column;
+                margin: 0;
+            }
+
+            ul li {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            .table {
+                font-size: 16px;
+                max-width: 90%; /* Adjust the maximum width as needed */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <header>
+            Hypertension associated SNPs Database (BPSNPs)
+        </header>
+        <div class="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="About HTN.html">About HTN</a></li>
+                <li><a href="Guidelines for HTN.html">Guidelines for HTN</a></li>
+                <li><a href="kegg.html">KEGG Pathway</a></li>
+                <li><a href="Molecular Mechanism.html">Molecular Mechanism</a></li>
+                <!-- <li><a href="Risk Assessment.html">Risk Assessment</a></li> -->
+                <li><a href="genepage.html">Gene</a></li>
+                <li><a href="Literature.html">Literature</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>
+                Joint National Committee (JNC) GUIDELINES 
+            </h2>
+            <table class="table">
+                <tr class="tr">
+                    <th>S.NO</th>
+                    <th>JNC GUIDELINES</th>
+                    <th>LINKS</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>JNC- VI</td>
+                    <td><a href="https://pubmed.ncbi.nlm.nih.gov/9659820/">https://pubmed.ncbi.nlm.nih.gov/9659820/</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>JNC- VII</td>
+                    <td><a href="https://www.nhlbi.nih.gov/files/docs/guidelines/jnc7full.pdf">https://www.nhlbi.nih.gov/files/docs/guidelines/jnc7full.pdf</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>JNC- VIII</td>
+                    <td><a href="https://www.aafp.org/pubs/afp/issues/2014/1001/p503.html">https://www.aafp.org/pubs/afp/issues/2014/1001/p503.html</a></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h2>
+                OTHER GUIDELINES
+            </h2>
+            <table class="table">
+                <tr class="tr">
+                    <th>S.NO</th>
+                    <th>GUIDELINES</th>
+                    <th>LINKS</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>International Society of Hypertension</td>
+                    <td><a href="https://www.aafp.org/pubs/afp/issues/2021/0615/p763.html">https://www.aafp.org/pubs/afp/issues/2021/0615/p763.html</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>European Society of Hypertension</td>
+                    <td><a href="https://www.acc.org/Latest-in-Cardiology/Articles/2024/02/05/11/43/2023-ESH-Hypertension-Guideline-Update#:~:text=Blood%20Pressure%20Categories%20and%20Hypertension%20Diagnosis&text=The%20ESH%20recommends%20a%20threshold,mm%20Hg%20(stage%201)">https://www.acc.org/Latest-in-Cardiology/Articles/2024/02/05/11/43/2023-ESH-Hypertension-Guideline-Update#:~:<br>text=Blood%20Pressure%20Categories%20and%20Hypertension%20Diagnosis&<br>text=The%20ESH%20recommends%20a%20threshold,mm%20Hg%20(stage%201)</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

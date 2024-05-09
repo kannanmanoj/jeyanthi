@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+         header {
+            background-color: rgb(36, 28, 127);
+            color: white;
+            font-weight: 500;
+            font-size: 40px; /* Decreased font size for better readability on mobile */
+            text-align: center; /* Center align header text */
+            padding: 20px; /* Increased padding for better spacing */
+        }
+
+        .menu {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Allow items to wrap */
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+        }
+
+        ul li {
+            list-style: none;
+            margin: 10px; /* Adjust margin for better spacing */
+            font-size: 24px; /* Decreased font size for better readability on mobile */
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #000000;
+            font-family: Arial;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+        }
+
+        ul li a:hover {
+            color: #ff0000;
+        }
+        .para {
+            font-size: 22px;
+            font-weight: bolder;
+            padding: 20px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+            margin: 20px; /* Adjust margin for spacing */
+        }
+
+        img {
+            width: 100%; /* Adjust image width to fill container */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Make the image a block element */
+            margin: auto; /* Center the image */
+            max-width: 800px; /* Limit image width on larger screens */
+        }
+
+        /* Responsive styles */
+        @media only screen and (max-width: 600px) {
+            ul li {
+                margin: 10px 0; /* Adjust margin for better spacing */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Hypertension associated SNPs Database (BPSNPs)
+    </header>
+    <div class="menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About HTN.html">About HTN</a></li>
+            <li><a href="Guidelines for HTN.html">Guidelines for HTN</a></li>
+            <li><a href="kegg.html">KEGG Pathway</a></li>
+            <li><a href="Molecular Mechanism.html">Molecular Mechanism</a></li>
+            <!-- <li><a href="Risk Assessment.html">Risk Assessment</a></li> -->
+            <li><a href="genepage.html">Gene</a></li>
+            <li><a href="Literature.html">Literature</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <p class="para">
+        Hypertension or high blood pressure is a chronic medical condition characterized by consistently elevated blood pressure in the arteries (140/90 mmHg or higher). Hypertension is also called the "SILENT KILLER". 
+    </p>
+    <img src="Database images/1.jpg" alt="">
+</body>
+</html>

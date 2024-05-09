@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        /* Common styles */
+        header {
+            background-color: rgb(36, 28, 127);
+            color: white;
+            font-weight: 500;
+            font-size: 40px; /* Decreased font size for better readability on mobile */
+            text-align: center; /* Center align header text */
+            padding: 20px; /* Increased padding for better spacing */
+        }
+
+        .menu {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Allow items to wrap */
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+        }
+
+        ul li {
+            list-style: none;
+            margin: 10px; /* Adjust margin for better spacing */
+            font-size: 24px; /* Decreased font size for better readability on mobile */
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #000000;
+            font-family: Arial;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+        }
+
+        ul li a:hover {
+            color: #ff0000;
+        }
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .image-container {
+            flex: 1;
+            padding: 20px;
+            max-width: 50%; /* Limit width to 50% */
+        }
+
+        .image-container img {
+            width: 100%; /* Adjust image width to fill the container */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove any extra spaces below image */
+        }
+
+        .para-container {
+            flex: 1;
+            padding: 20px;
+            max-width: 50%; /* Limit width to 50% */
+        }
+
+        .para {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: justify;
+            margin: 20px; /* Add margin around the paragraph */
+        }
+
+        /* Responsive styles */
+        @media only screen and (max-width: 600px) {
+            ul li {
+                margin: 10px 0; /* Adjust margin for better spacing */
+            }
+
+            .image-container, .para-container {
+                width: 100%; /* Full width on smaller screens */
+                max-width: none; /* Remove maximum width */
+            }
+
+            .image-container, .para-container {
+                padding: 10px; /* Reduce padding on smaller screens */
+            }
+
+            .para {
+                font-size: 16px; /* Decrease font size for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Hypertension associated SNPs Database (BPSNPs)
+    </header>
+    <div class="menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About HTN.html">About HTN</a></li>
+            <li><a href="Guidelines for HTN.html">Guidelines for HTN</a></li>
+            <li><a href="kegg.html">KEGG Pathway</a></li>
+            <li><a href="Molecular Mechanism.html">Molecular Mechanism</a></li>
+            <!-- <li><a href="Risk Assessment.html">Risk Assessment</a></li> -->
+            <li><a href="genepage.html">Gene</a></li>
+            <li><a href="Literature.html">Literature</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="image-container">
+            <img src="Database images/2.png" alt="">
+        </div>
+        <div class="para-container">
+            <p class="para">
+                The renin-angiotesin aldosterone system (RAAS) is a key regulatory mechanism for blood pressure and fluid balance in the human body. In the classical RAS, the enzyme renin cleaves its substrate angiotensinogen (Agt) forming the decapeptide angiotensin I that is in turn cleaved by angiotensin-converting enzyme (ACE) to produce the angiotensin II (Ang II), a key player of this system. Ang II activates its AT1 receptor (AT1R), the principal receptor that mediates the majority of the known actions of Ang II in the kidney, including vasoconstriction, renal sodium (Na+) reabsorption, and aldosterone secretion, increasing blood pressure and contributing to the development of hypertension. In addition to (ACE)/Ang II/AT1R and AT2R axis, other signaling pathways in the RAS, such as ACE2/angiotensin-(1-7)/Mas and Ang IV/IRAP, and other active peptide of the RAS, with physiological relevance as Ang III, Ang A and alamandine, are now widely recognized.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

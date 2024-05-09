@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="new_style.css">
+    <style>
+        /* General styles */
+        header {
+            background-color: rgb(36, 28, 127);
+            color: white;
+            font-weight: 500;
+            font-size: 40px; /* Decreased font size for better readability on mobile */
+            text-align: center; /* Center align header text */
+            padding: 20px; /* Increased padding for better spacing */
+        }
+
+        .menu {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Allow items to wrap */
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+        }
+
+        ul li {
+            list-style: none;
+            margin: 10px; /* Adjust margin for better spacing */
+            font-size: 24px; /* Decreased font size for better readability on mobile */
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #000000;
+            font-family: Arial;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+        }
+
+        ul li a:hover {
+            color: #ff0000;
+        }
+        .genes {
+            text-align: center;
+            margin-top: 20px; /* Add margin to separate from the header */
+        }
+        .genes h1 {
+            font-size: 30px;
+            margin: 30px 0;
+        }
+        .gene-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px; /* Adjust the gap between gene containers */
+            margin-bottom: 40px; /* Add margin between rows */
+        }
+        .gene-container {
+            background-color: #fff;
+            padding: 20px; /* Increase padding for better spacing */
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 350px; /* Set a fixed width for consistency */
+            max-width: 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gene-container:hover {
+            transform: scale(1.05); /* Add hover effect to enlarge container */
+        }
+        .gene-container a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            transition: color 0.4s ease-in-out;
+            font-size: 30px;
+        }
+        .gene-container a:hover {
+            color: #ff0000;
+        }
+
+        /* Responsive styles */
+        @media only screen and (max-width: 600px) {
+            .menu ul li {
+                margin-left: 10px;
+                font-size: 18px;
+            }
+            .genes h1 {
+                font-size: 20px;
+            }
+            .gene-container {
+                width: 90%; /* Adjust width for smaller screens */
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Hypertension associated SNPs Database (BPSNPs)
+    </header>
+    <div class="menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About HTN.html">About HTN</a></li>
+            <li><a href="Guidelines for HTN.html">Guidelines for HTN</a></li>
+            <li><a href="kegg.html">KEGG Pathway</a></li>
+            <li><a href="Molecular Mechanism.html">Molecular Mechanism</a></li>
+            <li><a href="genepage.html">Gene</a></li>
+            <li><a href="Literature.html">Literature</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="genes">
+        <h1>Risk Genes</h1>
+        <div class="gene-row">
+            <div class="gene-container">
+                <a class="gene1" href="akr1.html">AT1R</a>
+            </div>  
+            <div class="gene-container">
+                <a class="gene2" href="atr2.html">AT2R</a>
+            </div>
+            <div class="gene-container">
+                <a class="gene3" href="b2r.html">B2R</a>
+            </div>
+        </div>
+        <div class="gene-row">
+            <div class="gene-container">
+                <a class="gene4" href="etar.html">ETAR</a>
+            </div>
+            <div class="gene-container">
+                <a class="gene5" href="masr.html">MasR</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

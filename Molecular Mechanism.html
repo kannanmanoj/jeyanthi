@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        header {
+            background-color: rgb(36, 28, 127);
+            color: white;
+            font-weight: 500;
+            font-size: 40px; /* Decreased font size for better readability on mobile */
+            text-align: center; /* Center align header text */
+            padding: 20px; /* Increased padding for better spacing */
+        }
+
+        .menu {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Allow items to wrap */
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+        }
+
+        ul li {
+            list-style: none;
+            margin: 10px; /* Adjust margin for better spacing */
+            font-size: 24px; /* Decreased font size for better readability on mobile */
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #000000;
+            font-family: Arial;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+        }
+
+        ul li a:hover {
+            color: #ff0000;
+        }
+        .main {
+            display: flex;
+            justify-content: center; /* Center align content horizontally */
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+        }
+
+        .image-container, .image-container1 {
+            width: 50%; /* Make each image container take up half the width */
+            max-width: 100%; /* Allow the containers to be full width */
+        }
+
+        .image-container img, .image-container1 img {
+            width: 100%; /* Make images responsive within their containers */
+            height: auto;
+            display: block; /* Remove any extra spaces below image */
+        }
+
+        /* Responsive styles */
+        @media only screen and (max-width: 600px) {
+            ul li {
+                margin: 10px 0; /* Adjust margin for better spacing */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Hypertension associated SNPs Database (BPSNPs)
+    </header>
+    <div class="menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About HTN.html">About HTN</a></li>
+            <li><a href="Guidelines for HTN.html">Guidelines for HTN</a></li>
+            <li><a href="kegg.html">KEGG Pathway</a></li>
+            <li><a href="Molecular Mechanism.html">Molecular Mechanism</a></li>
+            <!-- <li><a href="Risk Assessment.html">Risk Assessment</a></li> -->
+            <li><a href="genepage.html">Gene</a></li>
+            <li><a href="Literature.html">Literature</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="image-container">
+            <img src="Database images/3.jpg" alt="">
+        </div>
+        <div class="image-container1">
+            <img src="Database images/4.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

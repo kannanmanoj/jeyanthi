@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        /* Common styles */
+        header {
+            background-color: rgb(36, 28, 127);
+            color: white;
+            font-weight: 500;
+            font-size: 40px; /* Decreased font size for better readability on mobile */
+            text-align: center; /* Center align header text */
+            padding: 20px; /* Increased padding for better spacing */
+        }
+
+        .menu {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Allow items to wrap */
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+        }
+
+        ul li {
+            list-style: none;
+            margin: 10px; /* Adjust margin for better spacing */
+            font-size: 24px; /* Decreased font size for better readability on mobile */
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #000000;
+            font-family: Arial;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+        }
+
+        ul li a:hover {
+            color: #ff0000;
+        }
+
+        /* Paragraph styles */
+        .para {
+            font-size: 22px; /* Decreased font size for better readability on mobile */
+            font-weight: bold;
+            padding: 20px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+            margin: 20px; /* Added margin for better spacing */
+        }
+        img {
+            width: 100%; /* Adjust image width to fill container */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Make the image a block element */
+            margin: auto; /* Center the image */
+            max-width: 600px; /* Limit image width on larger screens */
+        }
+         /* Responsive styles */
+         @media only screen and (max-width: 600px) {
+            ul li {
+                margin: 10px 0; /* Adjust margin for better spacing */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Hypertension associated SNPs Database (BPSNPs)
+    </header>
+    <div class="menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About HTN.html">About HTN</a></li>
+            <li><a href="Guidelines for HTN.html">Guidelines for HTN</a></li>
+            <li><a href="kegg.html">KEGG Pathway</a></li>
+            <li><a href="Molecular Mechanism.html">Molecular Mechanism</a></li>
+            <li><a href="genepage.html">Gene</a></li>
+            <li><a href="Literature.html">Literature</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <p class="para">
+        BPSNPs is an open access resource that collectively comprises the deleterious SNPs associated with hypertensive drug targets such as Angiotensin Type 1 receptor (AT1R), Angiotensin Type 2 receptor (AT2R), Bradykinin receptor 2 (B2R), Endothelin receptors type A (ETAR), and Mas receptor (MasR). This database compiles data from literature and primary databases, focusing on the relationships between hypertension, genetic variants, and genes.
+    </p>
+    <div class="img">
+        <img src="Database images/5.png" alt="">
+    </div>
+</body>
+</html>
